@@ -23,10 +23,12 @@ public class Todo {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	@Column(name="title", nullable = false)
+	@Column(name="title",nullable = false)
 	private String title;
 	
-	@Column(nullable = false)
-	private String description;
+	@Column(name="description", nullable = false)
+	private String description; 
+	
+	
 	private boolean completed;
 }
